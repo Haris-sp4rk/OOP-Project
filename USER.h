@@ -3,13 +3,20 @@
 #include<conio.h>
 #include <fstream>
 using namespace std;
+# pragma once
 fstream fp,fp1;
+//***************************************************************
+//                    CLASS FOR USER
+//****************************************************************
 class User
 {
 	char Password[11];
+	protected:
+	char name[20];
+
 
 public:
-char name[20];
+
 	void create_User()
 	{
 		system("cls");
