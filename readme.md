@@ -10,7 +10,13 @@ Project for the development of a user friendly console based application, named 
 19K-1326 Muhammad Jahanzeb
 
 ### 23-4-2020 12:00 AM
->Added necessary files and folders 
+>Added necessary files and folders
+ 
 >Updated readme.md file
+
 >V1
 
+### 23/4/2020 10:00 PM
+>Added server related files
+
+>V2
