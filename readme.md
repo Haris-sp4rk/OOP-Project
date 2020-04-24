@@ -20,3 +20,10 @@ Project for the development of a user friendly console based application, named 
 >Added server related files
 
 >V2
+
+### 25/4/2020 12:37 AM
+>Added admin pannel
+
+>Updated User.h
+
+>V3
