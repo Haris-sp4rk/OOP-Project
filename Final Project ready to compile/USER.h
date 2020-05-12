@@ -2,7 +2,6 @@
 #include<string.h>
 #include<conio.h>
 #include <fstream>
-#include <iostream>
 #include <cstdio>
 using namespace std;
 # pragma once
@@ -86,7 +85,9 @@ public:
 	char* retname(){
         return name;
     }
-    
+    char* retadminpass(){
+		return admin_pass;
+	}
 	void decrypt(){
         int len=strlen(Password);
         for(int i=0;i<len;i++){
@@ -145,7 +146,7 @@ void write_User(User st)
 }
 
 
-void Compare(char n[],User st)
+void Compare(char n[],User &st)
 {
 	int flag=0;
 	fp.open("User.dat",ios::in);
@@ -161,7 +162,7 @@ void Compare(char n[],User st)
 	
 	fp.close();
 	if(flag==0)
-    		cout<<"\n\nUser name does not exist"<<endl;
+    		cout<<"\t\t\\nUser name does not exist"<<endl;
  	
 }
 

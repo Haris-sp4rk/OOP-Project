@@ -27,3 +27,12 @@ Project for the development of a user friendly console based application, named 
 >Updated User.h
 
 >V3
+
+### 12/5/2020 6:57 AM
+>created a folder "Final project ready to compile" which  contain all files in one place and main.cpp can be compiled
+
+>It is expected that server is running already before accesing the chat system
+
+>All the code is divided seperated into different forlders so you can read and manage it easily
+
+>V4 project successfully completed :)

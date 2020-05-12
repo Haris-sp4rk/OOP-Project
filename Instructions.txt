@@ -1,0 +1,3 @@
+"Final project ready to compile" contain all files in one place and main.cpp can be compiled
+It is expected that server is running already before accesing the chat system
+All the code is divided seperated into different forlders so you can read and manage it easily

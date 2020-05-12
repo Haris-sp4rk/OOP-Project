@@ -17,7 +17,7 @@
 
 using namespace std;
 
-int main()
+void library()
 {
 	char ch;
 	intro();
@@ -67,7 +67,6 @@ int main()
 				}
 			}
 			Password[characterposition]='\0';
-			cout<<Password;
 			
 			if(Password==pass){
 				admin_menu();
@@ -78,11 +77,11 @@ int main()
 				 break;
 		  	case '4':display_allb();
 			    break;
-			case '5':exit(1);
+			case '5':return;
 		  	default :cout<<"\a";
 		}
     	}while(ch!='5');
-		return 0;
+		return ;
 }
 
 //***************************************************************
