@@ -414,24 +414,17 @@ void gotoxy (int x, int y)
 //****************************************************************
 
 void intro()
-{    cout <<"                                                 ******" << endl;
-    cout <<"                                                *********" << endl;
-    cout <<"                                               ***********" << endl;
-    cout <<"                                              ****    ****" << endl;
-    cout <<"                                              ***"        << endl;
-    cout <<"                                              ***"     << endl;
-    cout <<"                                              ***      ******************" << endl;
-    cout <<"                                              ***      ******************" << endl;
-    cout <<"                                              ***         **      ******" << endl;
-    cout <<"                                              ****       ***     ******" << endl;
-    cout <<"                                               ***********    ******" << endl;
-    cout <<"                                                  ******    *******"  << endl;
-    cout <<"                                                          ***************" << endl;
-    cout <<"                                                          ***************" <<  endl;
-    cout << endl;
-    cout << "                                         WELCOME TO GEEKZILLA LIBRARY MANAGEMENT SYSTEM" << endl;
-    cout<<"                                                     ";system("pause");
-
+{
+	system("cls");
+	gotoxy(10,11);
+	cout<<"                           LIBRARY";
+	gotoxy(10,14);
+	cout<<"                          MANAGEMENT";
+	gotoxy(10,17);
+	cout<<"                            SYSTEM";
+	cout<<"                \n\nMADE BY : SECTION J";
+	cout<<"                \n\nUNIVERSITY: FAST"<<endl;
+	getch();
 }
 
 
@@ -492,7 +485,5 @@ void admin_menu()
 }
 
 
-//***************************************************************
-//    	THE MAIN FUNCTION OF PROGRAM
-//****************************************************************
+
 

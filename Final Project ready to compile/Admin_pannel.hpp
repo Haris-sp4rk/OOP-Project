@@ -1,6 +1,9 @@
 #include<iostream>
 #include"USER.h"
 using namespace std;
+//***************************************************************
+//           FUNCTION FOR ADMIN PANNEL TO MODIFY USERS DATA
+//****************************************************************
 void admin_pannel(User &A){
     char Password[11];
     int tries=0;

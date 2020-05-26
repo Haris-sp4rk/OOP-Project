@@ -7,7 +7,9 @@ struct position {
     int x,y;
 };
 
-
+//***************************************************************
+//                    CLASS FOR FIELD
+//****************************************************************
 class field_cls {
     static const int height;
     static const int width;
@@ -56,7 +58,9 @@ public:
 
 } field;
 
-
+//***************************************************************
+//                    CLASS FOR FOOD
+//****************************************************************
 class food_cls {
     position pos;
     char symbol;
@@ -79,7 +83,11 @@ public:
     int get_y() const {return pos.y;}
     char get_symbol() const {return symbol;}} food;
 
-class snake_cls {
+//***************************************************************
+//                    CLASS FOR SNAKE
+//****************************************************************
+class snake_cls 
+{
     enum {UP, DOWN, LEFT, RIGHT} dir;
     char symbol, head_symbol;
     position pos[100];
@@ -170,7 +178,9 @@ public:
 const int field_cls::height = 24;
 const int field_cls::width = 79;
 
-
+//***************************************************************
+//                  FUNCTION TO START SNAKE GAME
+//****************************************************************
 void game1() {
         char a;
 	while(a!='2'){

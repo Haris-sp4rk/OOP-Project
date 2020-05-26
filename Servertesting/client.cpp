@@ -4,7 +4,9 @@
 #pragma comment(lib, "ws2_32.lib")
 
 using namespace std;
-
+//***************************************************************
+//                    CLIENT
+//****************************************************************
 void main()
 {
 	string ipAddress = "127.0.0.1";			// IP Address of the server

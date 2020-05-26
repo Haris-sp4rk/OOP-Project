@@ -58,8 +58,6 @@ public:
 		fflush(stdin);
 		strcpy(admin_pass,"Haris");
 		
-		
-		cout<<"\n\nUser Record Created.."<<endl;
 	}
 
 	void show_User()
@@ -138,8 +136,26 @@ void Modify_adminpass(User st){
 
 void write_User(User st)
 {
+	int check=0;
 	char ch;
-    
+	User A;
+    fp.open("User.dat",ios::in);
+	while(fp.read((char*)&A,sizeof(User)))
+	{
+		if((strcmp(A.retname(),st.retname())==0))
+		{
+			
+			check=1;
+            break;
+		}
+	}
+	
+	fp.close();
+	if(check==1)
+    		{cout<<"\t\t\nUser name already exist"<<endl;
+			return;}
+ 	
+    cout<<"\n\nUser ID Created.."<<endl;
 	fp.open("User.dat",ios::out|ios::app);
 	fp.write((char*)&st,sizeof(User));
     fp.close();

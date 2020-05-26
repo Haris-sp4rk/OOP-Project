@@ -1,3 +1,6 @@
+//***************************************************************
+//                    HEADER FILES USED IN PROJECT
+//****************************************************************
 #include <iostream>
 #include"USER.h"
 #include"Admin_pannel.hpp"
@@ -6,6 +9,9 @@
 #include"Canteen.hpp"
 #include"library.hpp"
 #include"arcade.hpp"
+//***************************************************************
+//                    MAIN FUNCTION
+//****************************************************************
 using namespace std;
 int main(){
     User A;
@@ -41,7 +47,7 @@ int main(){
       else if(c=='3')
       {
           system("cls");
-         c1;
+         Canteen c1;
         c1.Menu();
         c1.Takeorder();
         system("cls");
@@ -66,5 +72,7 @@ int main(){
 }
 return 0;
 }
-
+//***************************************************************
+//                    END
+//****************************************************************
 

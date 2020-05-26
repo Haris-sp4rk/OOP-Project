@@ -3,6 +3,9 @@
 
 using namespace std;
 
+//***************************************************************
+//                    CLASS FOR CANTEEN ITEMS
+//****************************************************************
 class items{
     string name;
     float price;
@@ -24,6 +27,9 @@ class items{
          cout <<"Enter new price of this item:";cin>>name;
      }
 };
+//***************************************************************
+//                    CLASS FOR CANTEEN
+//****************************************************************
 class Canteen:public User{
     items A[10];
     int a;
@@ -81,9 +87,10 @@ class Canteen:public User{
       }
       }
     }
-    void Printreceipt(){
+    void Printreceipt(User name){
         float total;
          cout<<"\n\t\t\t Thanks for choosing GEEKZILLA Canteen:"<<endl;
+         cout<<"\n\t NAME:"<<name.retname()<<endl;
          if(a==0){
              system("pause");
              return;
@@ -96,10 +103,10 @@ class Canteen:public User{
          total+=A[x].getprice();
          }
            cout<<"\t =========\t\t=========\t\t ========"<<endl;
-         cout<<"\t\t\t Toatal="<<total<<" RS"<<endl;
+         cout<<"\t\t\t Total="<<total<<" RS"<<endl;
           cout<<"\t =========\t\t=========\t\t ========"<<endl;
          cout<<"Now you can Pick your order by showing this receipt to the canteen:"<<endl;
-          cout<<"\t=======\t\t THANK YOU :)\t\t===="<<endl;
+          cout<<"\t =======\t\t THANK YOU :)\t\t======"<<endl;
           system("pause");
     }
         

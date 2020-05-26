@@ -3,6 +3,9 @@
 #include"pong.hpp"
 #include<conio.h>
 using namespace std;
+//***************************************************************
+//                    FUNCTION FOR ARCADE HOMEPAGE
+//****************************************************************
 void arcade(){
      while(1){
          system("cls");

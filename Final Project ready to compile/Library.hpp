@@ -1,6 +1,3 @@
-//***************************************************************
-//                   HEADER FILE USED IN PROJECT
-//****************************************************************
 
 #include <fstream>
 #include<conio.h>
@@ -17,6 +14,9 @@
 
 using namespace std;
 
+//***************************************************************
+//                    FUCTION TO CALL LIBRARY
+//****************************************************************
 void library()
 {
 	char ch;
@@ -67,6 +67,7 @@ void library()
 				}
 			}
 			Password[characterposition]='\0';
+			cout<<Password;
 			
 			if(Password==pass){
 				admin_menu();
@@ -77,7 +78,7 @@ void library()
 				 break;
 		  	case '4':display_allb();
 			    break;
-			case '5':return;
+			case '5':exit(1);
 		  	default :cout<<"\a";
 		}
     	}while(ch!='5');
@@ -85,5 +86,5 @@ void library()
 }
 
 //***************************************************************
-//    			END OF LIBRARY MANAGEMENT SYSTEM
+//    		            	END 
 //***************************************************************
