@@ -67,7 +67,7 @@ void library()
 				}
 			}
 			Password[characterposition]='\0';
-			cout<<Password;
+			
 			
 			if(Password==pass){
 				admin_menu();
@@ -78,7 +78,7 @@ void library()
 				 break;
 		  	case '4':display_allb();
 			    break;
-			case '5':exit(1);
+			case '5':return;
 		  	default :cout<<"\a";
 		}
     	}while(ch!='5');
