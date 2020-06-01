@@ -327,7 +327,7 @@ void book_issue()
        						int pos=-1*sizeof(st);
 						fp.seekp(pos,ios::cur);
 						fp.write((char*)&st,sizeof(student));
-						cout<<"\n\n\t Book issued successfully\n\nPlease Note: Write the current date 						in backside of your book and submit within 15 days fine Rs. 1 for each day 							after 15 days period";
+						cout<<"\n\n\t Book issued successfully\n\nPlease Note: Write the current date in backside of your book and submit within 15 days"<<endl<<"fine Rs. 10 for each day after 15 days period"<<endl;
 					}
 		    		}
 		  		if(flag==0)
@@ -372,11 +372,11 @@ void book_deposit()
 			{
 				bk.show_book();
 				flag=1;
-				cout<<"\n\nBook deposited in no. of days";
+				cout<<"\n\nBook deposited in no. of days:";
 				cin>>day;
 				if(day>15)
 				{
-				   fine=(day-15)*1;
+				   fine=(day-15)*10;
 				   cout<<"\n\nFine has to deposited Rs. "<<fine;
 				}
 					st.resettoken();
@@ -413,15 +413,8 @@ void gotoxy (int x, int y)
 //    	INTRODUCTION FUNCTION
 //****************************************************************
 
-void intro()
+inline void intro()
 {
-	system("cls");
-	gotoxy(10,11);
-	cout<<"                           LIBRARY";
-	gotoxy(10,14);
-	cout<<"                          MANAGEMENT";
-	gotoxy(10,17);
-	cout<<"                            SYSTEM";
 	cout<<"                \n\nMADE BY : SECTION J";
 	cout<<"                \n\nUNIVERSITY: FAST"<<endl;
 	getch();

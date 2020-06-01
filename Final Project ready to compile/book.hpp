@@ -13,7 +13,7 @@ class book
 	char bname[50];
 	char aname[20];
   public:
-	void create_book()
+	inline void create_book()
 	{
 		cout<<"\nNEW BOOK ENTRY...\n";
 		cout<<"\nEnter The book no.";
@@ -25,7 +25,7 @@ class book
 		cout<<"\n\n\nBook Created..";
 	}
 
-	void show_book()
+	inline void show_book()
 	{
 		cout<<"\nBook no. : "<<bno;
 		cout<<"\nBook Name : ";

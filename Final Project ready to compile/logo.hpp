@@ -4,7 +4,7 @@ using namespace std;
 //                 APPLICATION LOGO
 //****************************************************************
 
-void logo()
+inline void logo()
 {
     cout <<"                                                 ******" << endl;
     cout <<"                                                *********" << endl;

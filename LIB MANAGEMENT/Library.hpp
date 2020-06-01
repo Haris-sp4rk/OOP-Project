@@ -20,6 +20,24 @@ using namespace std;
 void library()
 {
 	char ch;
+	system("cls");
+	cout <<"                                                 ******" << endl;
+    cout <<"                                                *********" << endl;
+    cout <<"                                               ***********" << endl;
+    cout <<"                                              ****    ****" << endl;
+    cout <<"                                              ***"        << endl;
+    cout <<"                                              ***"     << endl;
+    cout <<"                                              ***      ******************" << endl;
+    cout <<"                                              ***      ******************" << endl;
+    cout <<"                                              ***         **      ******" << endl;
+    cout <<"                                              ****       ***     ******" << endl;
+    cout <<"                                               ***********    ******" << endl;
+    cout <<"                                                  ******    *******"  << endl;
+    cout <<"                                                          ***************" << endl;
+    cout <<"                                                          ***************" <<  endl;
+    cout << endl;
+    cout << "                                            WELCOME TO GEEKZILLA LIBRARY MANAGEMENT SYSTEM!" << endl;
+
 	intro();
 	do
 	{

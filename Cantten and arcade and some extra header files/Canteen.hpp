@@ -10,7 +10,7 @@ class items{
     string name;
     float price;
     public:
-    void initialize(string n,float f){
+    inline void initialize(string n,float f){
        name=n;
        price=f;
     }
@@ -20,10 +20,10 @@ class items{
      float getprice(){
          return price;
      }
-     void modname(){
+    inline void modname(){
          cout<<"Enter new name of this item:";cin >> name;
      }
-     void modprice(){
+     inline void modprice(){
          cout <<"Enter new price of this item:";cin>>name;
      }
 };

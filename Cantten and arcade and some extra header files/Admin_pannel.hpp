@@ -48,7 +48,7 @@ void admin_pannel(User &A){
         }
     }
     system("cls");
-    int a;
+    char a;
     while(a!=4){
         system("cls");
     cout<<"\t\t\t Welcome To Admin Pannel:"<<endl;    
@@ -60,15 +60,16 @@ void admin_pannel(User &A){
     a=getch();
     system("cls");
     
-    if(a==1){
+    if(a=='1'){
        Display_all(A);
        system("pause");
-    }else if(a==2){
+    }else if(a=='2'){
         char s[20];
         cin>>s;
         Modify_User(s,A);
-    }else if(a==3){
+    }else if(a=='3'){
         Modify_adminpass(A);
+        system("pause");
     }
     else{
         break;
