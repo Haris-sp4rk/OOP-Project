@@ -2,6 +2,7 @@
 #include<string.h>
 #include<conio.h>
 #include "USER.h"
+
 using namespace std;
 
 //***************************************************************
@@ -22,7 +23,7 @@ void Login(User &st,int &check)
 	{
 		if((strcmp(st.retname(),n)==0))
 		{
-			st.decrypt();
+			st.decrypt();   
 			flag=1;
             break;
 		}
@@ -77,6 +78,7 @@ void Login(User &st,int &check)
 			}
 		
 		Password[characterposition]='\0';
+
         if((strcmp(st.retPassword(),Password)==0))
 		{
 			cout << "\n\t\t\t Login Success:" << endl;
@@ -93,12 +95,15 @@ void Login(User &st,int &check)
         }
 
 }
+
 //***************************************************************
 //                 FUNCTION TO INITIALIZE LOGIN PANNEL
 //****************************************************************
+
 void login_panel(User &A)
 {
     char c;
+	
       start:
       system("cls");
       cout << "\n\t\t\t Welcome to Gekkzilla" << endl;
@@ -128,7 +133,8 @@ void login_panel(User &A)
 		  goto start;
         
       }
-	  else {
+	  else 
+	  {
 		  exit(1);
 	  }
 }

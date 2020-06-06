@@ -1,6 +1,7 @@
 #include<conio.h>
 #include <iomanip>
 #include <iostream>
+#include <cstdio>
 #include"USER.h"
 #pragma once
 using namespace std;
